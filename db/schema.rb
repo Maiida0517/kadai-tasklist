@@ -12,17 +12,10 @@
 
 ActiveRecord::Schema.define(version: 2022_01_10_123036) do
 
-  create_table "messages", charset: "utf8mb4", force: :cascade do |t|
-    t.string "content"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   create_table "tasks", charset: "utf8mb4", force: :cascade do |t|
     t.string "content"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.string "title"
     t.string "status"
   end
 
